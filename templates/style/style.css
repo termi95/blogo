@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+#navbarNav {
+    font-size: 1.6rem;
+    padding: 0.5em 0;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+    letter-spacing: 0.100em;
+}
+
+/** Carousel**/
+
+.carousel-item {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.carousel-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.carousel-img-one {
+    background-image: url(../../public/img/carousel-item-1.jpg);
+    background-size: cover;
+}
+
+.carousel-img-two {
+    background-image: url(../../public/img/carousel-item-2.jpg);
+    background-size: cover;
+}
+
+.carousel-img-three {
+    background-image: url(../../public/img/carousel-item-3.jpg);
+    background-size: cover;
+}
+
+.carousel-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/** end of Carousel**/
+
+/** cards **/
+
+.cards-logo {
+    padding-top: 1rem;
+    font-size: 6rem;
+}
+/** end of cards **/
