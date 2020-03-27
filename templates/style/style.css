@@ -64,11 +64,52 @@ body {
 }
 
 /** end of Carousel**/
+.under-line {
+    position: relative;
+}
+
+.under-line::after {
+    content: '';    
+    position: absolute;
+    border-bottom: 0.4rem solid black;
+    width: 50%;
+    left: 25%;
+}
 
 /** cards **/
-
 .cards-logo {
     padding-top: 1rem;
     font-size: 6rem;
 }
+
+#cards {
+    padding: 20px 0px;
+}
 /** end of cards **/
+
+/** skills **/
+#skills {
+    background-color: rgba(211, 211, 211, 0.180);
+    padding: 20px 0px;
+}
+
+.skills-head {
+    padding: 1rem 0rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/** end of skills **/
+
+/** passion **/
+#passions {
+    padding: 20px 0px;
+}
+
+.passions-head {
+    padding: 1rem 0rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/** end of passion **/
