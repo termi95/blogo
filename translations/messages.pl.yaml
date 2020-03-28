@@ -1,0 +1,4 @@
+symfony:
+    is:
+        # id is symfony.is.great
+        great: Symfony jest świetne

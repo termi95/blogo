@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class MainPageControler extends AbstractController 
 {
-    
     /**
      * Undocumented function
      *
@@ -15,7 +14,6 @@ class MainPageControler extends AbstractController
      */
     public function index():Response
     {
-
         return $this->render('mainPage.html.twig');
     }
 }
