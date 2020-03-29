@@ -1,17 +1,26 @@
 {% extends "base.html.twig" %}
 {% block body %}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><span class="logo">Termi</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 ml-auto"onclick="setPositionForLanguageButton()" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Projekty</a>
-                    <a class="nav-item nav-link" href="#">Kontakt</a>
-                    <a class="nav-item nav-link" href="#">Zaloguj</a>
+                    <a class="nav-item nav-link ml-auto" href="{{ path('index') }}">Home</a>
+                    <a class="nav-item nav-link ml-auto" href="#">Projekty</a>
+                    <a class="nav-item nav-link ml-auto" href="#">Kontakt</a>
+                    <a class="nav-item nav-link ml-auto" href="#">Zaloguj</a>
+                </div>
+            </div>
+            <div id="language-button" active="0" class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe navbar-language"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Polski</a>
+                    <a class="dropdown-item" href="#">English</a>                            
                 </div>
             </div>
         </div>
@@ -20,4 +29,20 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
+
+    <script>
+        function setPositionForLanguageButton(){
+            const element = document.getElementById("language-button");
+            let active = element.getAttribute('active');
+
+            if(active == 0){
+                element.classList.add("ml-auto");
+                element.setAttribute("active", "1"); 
+            } else {
+                element.classList.remove("ml-auto"); 
+                element.setAttribute("active", "0"); 
+            }
+        }
+    </script>
+
 {% endblock %}

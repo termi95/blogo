@@ -14,9 +14,28 @@ body {
     position: relative;
 }
 
+.extra-space-bottom {
+    padding-bottom: 5rem;
+}
+
+.extra-space-top {
+    padding-top: 3rem;
+}
+
+@media (max-width: 575px) {
+    .extra-space-top {
+        padding-top: 6rem;
+    }
+  }
+/** nabar **/
 #navbarNav {
     font-size: 1.6rem;
     padding: 0.5em 0;
+}
+
+.navbar-language {
+    font-size: 1.6rem;
+    padding: 0.1rem 0.3em;
 }
 
 .navbar-brand {
@@ -24,11 +43,15 @@ body {
     letter-spacing: 0.100em;
 }
 
+.dropdown-item {
+    font-size: 1.6rem;
+}
+/** end of nabar **/
 /** Carousel**/
 
 .carousel-item {
     position: relative;
-    height: 400px;
+    height: 600px;
     background-position: center;
     background-size: cover;
     z-index: 0;
@@ -103,13 +126,33 @@ body {
 
 /** passion **/
 #passions {
-    padding: 20px 0px;
+    padding-top: 20px;
+    margin-bottom: 15rem;
 }
 
 .passions-head {
-    padding: 1rem 0rem;
+    padding-top: 1rem;
     font-size: 4rem;
     font-weight: bold;
 }
 
+.passions-conntent {
+    padding-top: 4rem;
+}
+
+.passions-icon {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
 /** end of passion **/
+/** footer **/
+#footer-main {
+    height: 4rem;
+}
+
+.footer-icon {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+}
+/** end offooter **/
