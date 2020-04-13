@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{% trans %}contact.tittle{% endtrans %}{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+{% include 'nav.html.twig' %}
+
+<section id="contact" class="container bg-light" style="height: 100vh; padding-top:90px">
+    <div class="row">
+        <div class="col-3">
+            <img id="author" src="../../public/img/contact/author.jpg" alt="Author of the site">
+        </div>
+        <div  id="author-description" class="col-9">
+            <div class="d-flex justify-content-center">
+                <b>{% trans %}contact.author{% endtrans %}</b>
+            </div>
+            <div class="d-flex align-items-baseline">
+                <p>{% trans %}contact.authorDes{% endtrans %}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top:60px;">
+        <div class="col-12 d-flex justify-content-center">
+            <b>{% trans %}contact.whyContact{% endtrans %}</b>
+        </div>
+    </div>
+    <div class="row" style="padding-top:60px;">
+        <div class="col-12 d-flex justify-content-center">
+            <b>{% trans %}contact.dataToContact{% endtrans %}</b>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html.twig' %}
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

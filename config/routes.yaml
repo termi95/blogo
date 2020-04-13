@@ -1,3 +1,12 @@
 index:
    path: /
    controller: App\Controller\MainPageControler::index
+
+project:
+   path: /project
+   controller: App\Controller\MainPageControler::project
+
+contact:
+   path: /contact
+   controller: App\Controller\MainPageControler::contact
+   

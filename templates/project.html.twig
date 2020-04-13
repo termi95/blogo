@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{% trans %}project.tittle{% endtrans %}{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+{% include 'nav.html.twig' %}
+
+<section class="container project-content">
+    <div class="row" style="padding-top:30%; height:100vh;">
+        <div class="col d-flex justify-content-center">
+        <p>Wygląda na to, że nie mam obecnie projektów, którymi mógłbym się pochwalić.<i class="fas fa-frown-open"></i></p>            
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html.twig' %}
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

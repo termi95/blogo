@@ -16,4 +16,14 @@ class MainPageControler extends AbstractController
     {
         return $this->render('mainPage.html.twig');
     }
+
+    public function project():Response
+    {
+        return $this->render('project.html.twig');
+    }
+
+    public function contact():Response
+    {
+        return $this->render('contact.html.twig');
+    }
 }
