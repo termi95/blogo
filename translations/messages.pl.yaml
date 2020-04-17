@@ -1,7 +1,37 @@
-symfony:
-    is:
-        # id is symfony.is.great
-        great: Symfony jest świetne
+nav:
+    home: Home
+    project: Projekty
+    contact: Kontakt
+    login: Zaloguj
+    polishLang: Polski
+    englishLang: English
+    nick: Termi
+
+mainPage:
+    tittle: Strona główna
+    carousel:
+        quality: Jakość
+        qualityDes: Moje rozwiązania spełniają najwyższe standardy jakość i wyglądają dobrze bez względu na jakim urządaniu są wyświetlane.
+        idea: Pomysłowość
+        ideaDes: To jedna z moich cech dzięki, której zawsze znajde rozwiązanie na każdy problem.
+        productivity: Produktywnosć
+        productivityDes: Napędzany kawą tworzę kod dobrej jakości i zawsze dowożę moje taski w terminie.
+    skills:
+        tittle: Moje umiejętności
+        symfony: Symfony jest moim ulubiony frameworkiem więc to właśnie on został wybrany to napędzania moich stron.
+        bootstrap: To właśnie Bootstrap pomaga mi aby strony wyglądały tak dobrze na każdym urzadzeniu.
+        mysql: Bazy danych również nie stanowią dla mnie żadnego wyzwania a na swoją bazę wybrałem MariaDB.
+        linux: Linux to mój ulubiony system operacyjny i nie tylko pozwala mi on na wydajną prace ale również to na nim stoją moje strony.
+    passion:
+        tittle: Moje Pasje
+        car: Motoryzacja
+        carDes: Auta są w kręgu moich zainteresowań i choć sam nie jestem ekspertem zawsze chętnie porozmawiam na ich temat.
+        game: Granie
+        gameDes: Gry komputerowe są moim ulubionym sposobem na spędzanie wolnego czasu, bo to one właśnie pozwalają mi sie zrelaksować.
+        book: Dobra książka
+        bookDes: Czasem trzeba odpocząć od komputera i w tym właśnie pomaga mi dobra książka, którą lubie czytać w wolnych chwilach.
+        pc: Komputery
+        pcDes: Spędzając większość swojego czasu przed komputerem byłoby wstydem nie wiedzieć na jego temat nic, więc staram się zawsze być nabieżąco.
 
 project:
     tittle: Projekty

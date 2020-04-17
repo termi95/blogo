@@ -108,6 +108,10 @@ body {
 #cards {
     padding: 20px 0px;
 }
+
+.card {
+    height: 25rem;
+}
 /* end of cards */
 
 /* skills */
@@ -121,7 +125,16 @@ body {
     font-size: 4rem;
     font-weight: bold;
 }
+.skills {
+    font-size: 2rem;
+    padding-top: 4rem;
+    list-style-type: none;
+}
 
+.skills-logo-space {
+    font-size: 3.5rem;
+    margin: 15px 10px;
+}
 /* end of skills */
 
 /* passion */

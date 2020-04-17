@@ -1,10 +1,10 @@
-{% extends "base.html.twig" %}
+{% extends "nav.html.twig" %}
 
 {% block title %}{% trans %}contact.tittle{% endtrans %}{% endblock %}
 {% block stylesheets %}{% endblock %}
 
 {% block body %}
-{% include 'nav.html.twig' %}
+    {{ parent() }}
 
 <section id="contact" class="container bg-light" style="height: 100vh; padding-top:90px">
     <div class="row">
@@ -34,7 +34,4 @@
 </section>
 
 {% include 'footer.html.twig' %}
-{% endblock %}
-{% block javascripts %}
-    {{ parent() }}
 {% endblock %}
