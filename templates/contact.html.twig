@@ -6,7 +6,7 @@
 {% block body %}
     {{ parent() }}
 
-<section id="contact" class="container bg-light" style="height: 100vh; padding-top: 50px">
+<section id="contact" class="container bg-light" style="padding-top: 50px">
     <div class="row">
         <div class="col-md-3">
             <img id="author" src="../../public/img/contact/author.jpg" alt="Author of the site">
@@ -21,14 +21,32 @@
         </div>
     </div>
 
-    <div class="row" style="padding-top:60px;">
+    <div class="row extra-space-top">
         <div class="col-12 d-flex justify-content-center">
             <b>{% trans %}contact.whyContact{% endtrans %}</b>
         </div>
-    </div>
-    <div class="row" style="padding-top:60px;">
+        <div class="col-12">
+            <p>{% trans %}contact.des{% endtrans %}</p></div>
+        </div>
+    <div class="row extra-space-top">
         <div class="col-12 d-flex justify-content-center">
-            <b>{% trans %}contact.dataToContact{% endtrans %}</b>
+            <b>{% trans %}contact.dataToContactTittle{% endtrans %}</b>
+        </div>
+        <div class="col-6 d-flex contact-info extra-space-top">
+            <ul class="contact">
+                <li>{% trans %}contact.dataToContact.phone{% endtrans %}</li>
+                <li>{% trans %}contact.dataToContact.email{% endtrans %}</li>
+                <li>{% trans %}contact.dataToContact.linkedin{% endtrans %}</li>
+                <li>{% trans %}contact.dataToContact.github{% endtrans %}</li>
+            </ul>
+        </div>
+        <div class="col-6 d-flex contact-data extra-space-top">
+            <ul class="contact">
+                <li>512 197 146</li>
+                <li>sokolowski.a95@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/andrzej-soko%C5%82owski-4412b9194/" target="_blank">Mój profil linkedin</a></li>
+                <li><a href="https://github.com/termi95" target="_blank">Mój profil github</a></li>
+            </ul>
         </div>
     </div>
 </section>

@@ -40,5 +40,11 @@ contact:
     tittle: Kontakt
     author: Kim jest ten gościu ze zdjęcia?
     whyContact: Po co chciałbyś się ze mną kontaktować?
-    dataToContact: Dane kontaktowe
+    des: Powodów jest wiele dlatego postaram sie wypisać tylko te najważniesze dla Ciebie. Jeżeli szukasz kogoś kto stworzy dla Ceibie stronę lub aplikacje, zawsze dowozi powieżone mu zadania na czas, pisze kod który nie wymaga poprawek to włąśnie ja jestem taką osobą.
+    dataToContactTittle: Dane kontaktowe
+    dataToContact:
+            phone: Nr telefonu
+            linkedin: Profil na linkedin
+            email: Adres emial
+            github: Mój github
     authorDes: Tak się składa, że to własnie jestem Ja, nie kto inny jak autor tej strony. Wiele osób mogłoby mnie określić mianem tak zwanego "nerda" lub "geeka" i pewnie każdy miałby trochę racji. Informatyka to moja pasja, staram sie w niej realizować, rozwijać i osiągnąć nowo wyznaczone cele. Oczywiście nie nie tylko informatyką żyje człowiek ale to juz pewnie zdążyłeś do zauważyć na innych podstronach. Zachęcam cię do zerknięcia do sekcji ponniżej bo na prawdę warto.

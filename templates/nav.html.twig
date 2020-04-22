@@ -11,7 +11,7 @@
                     <a class="nav-item nav-link ml-auto" href="{{ path('index') }}">{% trans %}nav.home{% endtrans %}</a>
                     <a class="nav-item nav-link ml-auto" href="{{ path('project') }}">{% trans %}nav.project{% endtrans %}</a>
                     <a class="nav-item nav-link ml-auto" href="{{ path('contact') }}">{% trans %}nav.contact{% endtrans %}</a>
-                    <a class="nav-item nav-link ml-auto" href="#">{% trans %}nav.login{% endtrans %}</a>
+                    <a class="nav-item nav-link ml-auto" href="{{ path('login') }}" style="visibility: hidden">{% trans %}nav.login{% endtrans %}</a>
                 </div>
             </div>
             <div id="language-button" active="0" class="dropdown">

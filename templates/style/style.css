@@ -28,6 +28,12 @@ body {
     }
   }
 /* nabar */
+@media (max-width: 575px) {
+    #navbarNav > .navbar-nav, #language-button{
+        padding-right: 10px;
+    }
+  }
+
 #navbarNav {
     font-size: 1.6rem;
     padding: 0.5em 0;
@@ -221,13 +227,39 @@ body {
     padding: 30px 30px;
 }
 
-@media (max-width: 575px) {
-    #author{
-        margin-bottom: 3rem;
-    }
-}
-
 #author-description {
     height: 240px;
+}
+
+.contact {
+    list-style: none;
+}
+
+#contact {
+    height: 100vh
+}
+
+.contact-data {
+    justify-content: start;
+}
+
+.contact-info {
+    justify-content: end;
+}
+
+@media (max-width: 575px) {
+    #author{
+        margin-bottom: 3rem; 
+    }
+    #contact {
+        height: 100%;
+    }
+    .contact-data {
+        justify-content: end;
+    }
+    
+    .contact-info {
+        justify-content: start;
+    }    
 }
 /* end of contact */

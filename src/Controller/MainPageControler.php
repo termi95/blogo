@@ -26,4 +26,9 @@ class MainPageControler extends AbstractController
     {
         return $this->render('contact.html.twig');
     }
+
+    public function login():Response
+    {
+        return $this->render('login.html.twig');
+    }
 }
