@@ -6,16 +6,16 @@
 {% block body %}
     {{ parent() }}
 
-<section id="contact" class="container bg-light" style="height: 100vh; padding-top:90px">
+<section id="contact" class="container bg-light" style="height: 100vh; padding-top: 50px">
     <div class="row">
-        <div class="col-3">
+        <div class="col-md-3">
             <img id="author" src="../../public/img/contact/author.jpg" alt="Author of the site">
         </div>
-        <div  id="author-description" class="col-9">
+        <div  id="author-description" class="col-md-9 d-flex flex-column justify-content-center" style="height:240px">
             <div class="d-flex justify-content-center">
                 <b>{% trans %}contact.author{% endtrans %}</b>
             </div>
-            <div class="d-flex align-items-baseline">
+            <div>
                 <p>{% trans %}contact.authorDes{% endtrans %}</p>
             </div>
         </div>
